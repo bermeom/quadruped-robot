@@ -26,8 +26,8 @@ $   python3 -V
 - Install [MuJoCo](http://www.mujoco.org/)
 1. Obtain a 30-day free trial on the [MuJoCo](http://www.mujoco.org/) website or free license if you are a student. The license key will arrive in an email with your username and password.
 2. Download the MuJoCo version 150 binaries for Linux, OSX, or Windows.
-3. Unzip the downloaded mjpro150 directory into ~/.mujoco/mjpro150, and place your license key (the mjkey.txt file from your email) at ~/.mujoco/mjkey.txt.
-4. Add the following lines in .bashrc at the end:
+3. Unzip the downloaded mjpro150 directory into `~/.mujoco/mjpro150`, and place your license key (the `mjkey.txt` file from your email) at `~/.mujoco/mjkey.txt`.
+4. Add the following lines in `.bashrc` at the end:
 ```sh
 export MUJOCO_PATH="$HOME/.mujoco/mjpro150"
 export MUJOCO_LICENSE_PATH="${MUJOCO_PATH}/bin/mjkey.txt"
@@ -39,7 +39,7 @@ export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${MUJOCO_PATH}/bin"
 $   cd ~/.mujoco/mjpro150/bin
 $   ./simulate ../model/humanoid.xml 
 ```
-Note: if you have problems with GLFW or something later, you should add these lines in .bashrc at the end:
+Note: if you have problems with GLFW or something later, you should add these lines in `.bashrc` at the end:
 ```sh
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib/nvidia-396"
 export LD_PRELOAD="$LD_PRELOAD:/usr/lib/x86_64-linux-gnu/libGLEW.so"
