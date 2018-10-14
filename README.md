@@ -34,7 +34,11 @@ export MUJOCO_LICENSE_PATH="${MUJOCO_PATH}/bin/mjkey.txt"
 export PATH="${PATH}:${MUJOCO_PATH}/bin"
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${MUJOCO_PATH}/bin"
 ```
-5. Test if MuJoCo is working
+5. Run this line in terminal:
+```sh
+source ~/.bashrc
+```
+6. Test if MuJoCo is working
 ```sh
 $   cd ~/.mujoco/mjpro150/bin
 $   ./simulate ../model/humanoid.xml 
