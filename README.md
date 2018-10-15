@@ -36,7 +36,7 @@ export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${MUJOCO_PATH}/bin"
 ```
 5. Run this line in terminal:
 ```sh
-source ~/.bashrc
+$   source ~/.bashrc
 ```
 6. Test if MuJoCo is working
 ```sh
