@@ -51,7 +51,7 @@ export LD_PRELOAD="$LD_PRELOAD:/usr/lib/x86_64-linux-gnu/libGLEW.so"
 - Install [GYM](https://github.com/openai/gym) and [mujoco-py](https://github.com/openai/mujoco-py): 
 ```sh
 $   sudo -H pip3 install -U gym
-$   sudo -H pip3 install -U '^Cjoco-py<1.50.2,>=1.50.1'
+$   sudo -H pip3 install -U 'mujoco-py<1.50.2,>=1.50.1'
 ```
 Test if the installation was successful, run this code with `python3`:
 ```python
