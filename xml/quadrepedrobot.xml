@@ -76,7 +76,7 @@
       <!-- <site name='tip'  pos='.15 0 .11'/>-->
       <body name="lbthigh" pos="-.25 .4 0">
         <joint name="lbthigh_y" type="hinge" axis="0 1 0" damping="6" pos="0 0 0" range="-.52 1.05" stiffness="240"  armature="0.02"  />
-        <joint name="lbthigh_x" type="hinge" axis="1 0 0" damping="6" pos="0 0 0" range="-0.4 0.4" stiffness="240"  armature="0.02"  />
+        <joint name="lbthigh_x" type="hinge" axis="1 0 0" damping="6" pos="0 0 0" range="-0.2 0.2" stiffness="240"  armature="0.02"  />
         <geom axisangle="0 1 0 -3.8" name="lbthigh" pos=".1 0 -.13" size="0.046 .145" type="capsule"/>
         <body name="lbshin" pos=".16 0 -.25">
           <joint  name="lbshin" type="hinge"  axis="0 1 0" damping="4.5" pos="0 0 0" range="-.785 .785" stiffness="180" armature="0.02"/>
@@ -89,7 +89,7 @@
       </body>
       <body name="rbthigh" pos="-.25 .1 0">
         <joint name="rbthigh_y" type="hinge" axis="0 1 0" damping="6" pos="0 0 0" range="-.52 1.05" stiffness="240" armature="0.02"/>
-        <joint name="rbthigh_x" type="hinge" axis="1 0 0" damping="6" pos="0 0 0" range="-0.4 0.4" stiffness="240"   armature="0.02"  />
+        <joint name="rbthigh_x" type="hinge" axis="1 0 0" damping="6" pos="0 0 0" range="-0.2 0.2" stiffness="240"   armature="0.02"  />
         <geom axisangle="0 1 0 -3.8" name="rbthigh" pos=".1 0 -.13" size="0.046 .145" type="capsule"/>
         <body name="rbshin" pos=".16 0 -.25">
           <joint axis="0 1 0" damping="4.5" name="rbshin" pos="0 0 0" range="-.785 .785" stiffness="180" type="hinge"  armature="0.02"/>
@@ -102,7 +102,7 @@
       </body>
       <body name="lfthigh" pos=".5 .4 0">
           <joint name="lfthigh_y" type="hinge" axis="0 1 0" damping="4.5" pos="0 0 0" range="-1 .7" stiffness="180"  armature="0.02"/>
-          <joint name="lfthigh_x" type="hinge" axis="1 0 0" damping="6" pos="0 0 0" range="-0.4 0.4" stiffness="240"   armature="0.02"  />
+          <joint name="lfthigh_x" type="hinge" axis="1 0 0" damping="6" pos="0 0 0" range="-0.2 0.2" stiffness="240"   armature="0.02"  />
         
           <geom axisangle="0 1 0 .52" name="lfthigh" pos="-.07 0 -.12" size="0.046 .133" type="capsule"/>
           <body name="lfshin" pos="-.14 0 -.24">
@@ -116,7 +116,7 @@
       </body>
       <body name="rfthigh" pos=".5 .1 0">
         <joint name="rfthigh_y" type="hinge" axis="0 1 0" damping="4.5" pos="0 0 0" range="-1 .7" stiffness="180"  armature="0.02"/>
-        <joint name="rfthigh_x" type="hinge" axis="1 0 0" damping="6" pos="0 0 0" range="-0.4 0.4" stiffness="240"   armature="0.02"  />
+        <joint name="rfthigh_x" type="hinge" axis="1 0 0" damping="6" pos="0 0 0" range="-0.2 0.2" stiffness="240"   armature="0.02"  />
         
         <geom axisangle="0 1 0 .52" name="fthigh" pos="-.07 0 -.12" size="0.046 .133" type="capsule"/>
         <body name="rfshin" pos="-.14 0 -.24">

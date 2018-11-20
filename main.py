@@ -32,16 +32,16 @@ perp = mpy.cymj.PyMjvPerturb();
 while True:
     sim.set_state(sim_state)
     print("qfrc_applied[0]-> ",sim.data.qfrc_applied);
-    force[1]=1500;
+    force[1]=150;
     # # mpy.functions.mj_applyFT(sim.model,sim.data,force,torque,point,body,sim.data.qfrc_applied);
-    sim.step();
-    print("qfrc_applied[1]-> ",sim.data.qfrc_applied);
+    # sim.step();
+    # print("qfrc_applied[1]-> ",sim.data.qfrc_applied);
     # # mpy.functions.mj_applyFT(sim.model,sim.data,-sim.data.qfrc_applied,torque,point,body,sim.data.qfrc_applied);
-    force[1]=0;
-    sim.step();
+    # force[1]=0;
+    # sim.step();
     # sim.data.qfrc_applied[0]=0;
     # mpy.functions.mjv_applyPerturbForce(sim.model,sim.data,perp);
-    print("qfrc_applied[2]-> ",sim.data.qfrc_applied);
+    # print("qfrc_applied[2]-> ",sim.data.qfrc_applied);
 
     for i in range(1000):
         if i < 200 | i > 800 :
