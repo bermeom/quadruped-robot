@@ -3,10 +3,9 @@
 Shows how to toss a capsule to a container.
 """
 import numpy as np
-import mujoco_py as mpy #import load_model_from_path, MjSim, MjViewer
 from pprint import pprint
+import mujoco_py as mpy #import load_model_from_path, MjSim, MjViewer
 import os
-
 model = mpy.mujoco_py.load_model_from_path("xml/quadrepedrobot.xml")
 # model = mpy.mujoco_py.load_model_from_path("xml/humanoid.xml")
 sim = mpy.MjSim(model)
@@ -29,27 +28,44 @@ body = 1;
 qfrc_target = sim.data.qfrc_applied;
 perp = mpy.cymj.PyMjvPerturb();
 # print("start",qfrc_target);
+sw = True;
 while True:
     sim.set_state(sim_state)
     print("qfrc_applied[0]-> ",sim.data.qfrc_applied);
-    force[1]=150;
+    # force[1]=150;
     # # mpy.functions.mj_applyFT(sim.model,sim.data,force,torque,point,body,sim.data.qfrc_applied);
-    # sim.step();
+    sim.step();
     # print("qfrc_applied[1]-> ",sim.data.qfrc_applied);
     # # mpy.functions.mj_applyFT(sim.model,sim.data,-sim.data.qfrc_applied,torque,point,body,sim.data.qfrc_applied);
-    # force[1]=0;
+    # if sw :
+    #     force[1]=0;
+    # sw =  not sw;
     # sim.step();
     # sim.data.qfrc_applied[0]=0;
     # mpy.functions.mjv_applyPerturbForce(sim.model,sim.data,perp);
     # print("qfrc_applied[2]-> ",sim.data.qfrc_applied);
+    pprint(sim.data)
+    pprint(sim.data.qpos.flat)   
 
-    for i in range(1000):
+    # sim.data.ctrl[4*0+3]=-1;
+    # sim.data.ctrl[4*1+3]=-1;
+    # sim.data.ctrl[4*2+3]=-1;
+    # sim.data.ctrl[4*3+3]=-1;
+    sim.step();
+    observations = np.concatenate([
+            sim.data.qpos.flat,
+            sim.data.qvel.flat,
+        ]);
+    print(len(sim.data.qpos)," ",len(sim.data.qvel),"\n",observations);
+    for i in range(500):
         if i < 200 | i > 800 :
+            sim.data.ctrl[3]=1;
             sim.data.ctrl[k] = -0.5
             sim.data.ctrl[k+4] = 0.5
             sim.data.ctrl[k+2*4] = -0.5
             sim.data.ctrl[k+3*4] =  0.5
         else:
+        #     sim.data.ctrl[3]=-1;
             sim.data.ctrl[k] = 1.0/2
             sim.data.ctrl[k+4] = -1.0/2
             sim.data.ctrl[k+2*4] = 1.0/2
@@ -58,7 +74,11 @@ while True:
         viewer.render();
         # mpy.functions.mj_applyFT(sim.model,sim.data,force0,torque,point,body,qfrc_target);
         # print("qfrc_target",qfrc_target);
-
+    observations = np.concatenate([
+        sim.data.qpos.flat[1:],
+        sim.data.qvel.flat,
+    ]);
+    print("END",len(sim.data.qpos)," ",len(sim.data.qvel),"\n",observations);
 
     if os.getenv('TESTING') is not None:
         break
