@@ -17,33 +17,35 @@ class QuadrepedEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         utils.EzPickle.__init__(self)
 
     def step(self, action):
-        pos_before = mass_center(self.model, self.sim)
+        mc_before = mass_center(self.model, self.sim)
+        qpos_before = np.array(self.sim.data.qpos);
+        qvel_before = np.array(self.sim.data.qvel);
+        xpos_before = np.array(self.sim.data.xipos);
         self.do_simulation(action, self.frame_skip)
-        pos_after = mass_center(self.model, self.sim)
-        alive_bonus = 5.0
+        mc_after = mass_center(self.model, self.sim)
+        qpos_after = np.array(self.sim.data.qpos);
+        qvel_after = np.array(self.sim.data.qvel);
+        xpos_after = np.array(self.sim.data.xipos); 
+        # print("qpos : ",qpos_before[0:4]," ",qpos_after[0:4])
+        # print("xpos : ",xpos_before," ",xpos_after)
+        # print("qvel : ",qvel_before[0:3]," ",qvel_after[0:3])
+        # print("mc : ",mc_after," ",mc_after)
+        
+        alive_bonus = 3.0
         data = self.sim.data
-        lin_vel_cost = 0.25 * (pos_after - pos_before) / self.model.opt.timestep
+        x_vel = (qpos_after[0] - qpos_before[0])/self.dt;
+        y_vel = (qpos_after[1] - qpos_before[1])/self.dt;
+        lin_vel_cost =   (x_vel+y_vel*0)
         quad_ctrl_cost = 0.1 * np.square(data.ctrl).sum()
         quad_impact_cost = .5e-6 * np.square(data.cfrc_ext).sum()
         quad_impact_cost = min(quad_impact_cost, 10)
-        reward = lin_vel_cost - quad_ctrl_cost - quad_impact_cost + alive_bonus
-        qpos = self.sim.data.qpos
-        orientation = qpos.flat[3:7]; # w x y z
+        reward = (lin_vel_cost - quad_ctrl_cost - quad_impact_cost) + alive_bonus
+        orientation = qpos_after.flat[3:7]; # w x y z
         done = bool((math.fabs(orientation[1])+math.fabs(orientation[2]))>0.5) # rotational angles |x|+|y| 
-        print("Done : ",done," ",orientation)
+        print("Done : ",done," ",reward,lin_vel_cost,quad_ctrl_cost,quad_impact_cost,);
         # done = False;
         ob = self._get_obs()
         return ob, reward, done, dict(reward_linvel=lin_vel_cost, reward_quadctrl=-quad_ctrl_cost, reward_alive=alive_bonus, reward_impact=-quad_impact_cost)
-        # print("reward : ",dict(reward_linvel=lin_vel_cost, reward_quadctrl=-quad_ctrl_cost, reward_alive=alive_bonus, reward_impact=-quad_impact_cost));
-        # xposbefore = self.sim.data.qpos[0]
-        # self.do_simulation(action, self.frame_skip)
-        # xposafter = self.sim.data.qpos[0]
-        # ob = self._get_obs()
-        # reward_ctrl = - 0.1 * np.square(action).sum()
-        # reward_run = (xposafter - xposbefore)/self.dt
-        # reward = reward_ctrl + reward_run
-        # done = False
-        # return ob, reward, done, dict(reward_run=reward_run, reward_ctrl=reward_ctrl)
 
     def _get_obs(self):
         return np.concatenate([

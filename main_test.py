@@ -52,7 +52,7 @@ def main():
             action = agent.evaluate_actor(np.reshape(x,[1,num_states]))
             noise = exploration_noise.noise()
             action = action[0] + noise #Select action according to current policy and exploration noise
-            print ("Action at step", t ," :",action,"\n")
+            # print ("Action at step", t ," :",action,"\n")
             
             observation,reward,done,info=env.step(action)
             
@@ -65,8 +65,8 @@ def main():
             counter+=1
             #check if episode ends:
             if (done or (t == steps-1)):
-                print ('EPISODE: ',i,' Steps: ',t,' Total Reward: ',reward_per_episode)
-                print ("Printing reward to file")
+                # print ('EPISODE: ',i,' Steps: ',t,' Total Reward: ',reward_per_episode)
+                # print ("Printing reward to file")
                 exploration_noise.reset() #reinitializing random noise for action exploration
                 reward_st = np.append(reward_st,reward_per_episode)
                 np.savetxt('episode_reward.txt',reward_st, newline="\n")
