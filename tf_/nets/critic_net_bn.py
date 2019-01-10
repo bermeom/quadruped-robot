@@ -1,12 +1,13 @@
 import tensorflow as tf
 import math
-from batch_normalization.batch_norm import batch_norm
+from tf_.batch_normalization.batch_norm import batch_norm
 import numpy as np
 LEARNING_RATE= 0.001
 TAU = 0.001
 BATCH_SIZE = 64
 N_HIDDEN_1 = 400
 N_HIDDEN_2 = 300
+
 class CriticNet_bn:
     """ Critic Q value model with batch normalization of the DDPG algorithm """
     def __init__(self,num_states,num_actions):

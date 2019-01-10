@@ -1,6 +1,6 @@
 import tensorflow as tf
 import math
-from batch_normalization.batch_norm import batch_norm
+from tf_.batch_normalization.batch_norm import batch_norm
 import numpy as np
 LEARNING_RATE = 0.0001
 TAU = 0.001
@@ -89,7 +89,6 @@ class ActorNet_bn:
         
     def evaluate_actor(self,state_t):
         return self.sess.run(self.actor_model, feed_dict={self.actor_state_in:state_t,self.is_training: False})        
-        
         
     def evaluate_target_actor(self,state_t_1):
         return self.sess.run(self.t_actor_model, feed_dict={self.t_actor_state_in: state_t_1,self.t_is_training: False})

@@ -1,15 +1,15 @@
-#Reference:
-# https://github.com/stevenpjg/ddpg-aigym/
+#Reference: https://github.com/stevenpjg/ddpg-aigym/
 
 import numpy as np
-from nets.actor_net import ActorNet
-from nets.critic_net import CriticNet
-from nets.actor_net_bn import ActorNet_bn
-from nets.critic_net_bn import CriticNet_bn
 from collections import deque
 from gym.spaces import Box, Discrete
 import random
-from ddpg.tensorflow_grad_inverter import grad_inverter
+
+from tf_.nets.actor_net import ActorNet
+from tf_.nets.critic_net import CriticNet
+from tf_.nets.actor_net_bn import ActorNet_bn
+from tf_.nets.critic_net_bn import CriticNet_bn
+from tf_.tensorflow_grad_inverter import grad_inverter
 
 REPLAY_MEMORY_SIZE = 10000
 BATCH_SIZE = 64
@@ -23,11 +23,9 @@ class DDPG:
         self.num_states = env.observation_space.shape[0]
         self.num_actions = env.action_space.shape[0]
         
-        
         if is_batch_norm:
             self.critic_net = CriticNet_bn(self.num_states, self.num_actions) 
             self.actor_net = ActorNet_bn(self.num_states, self.num_actions)
-            
         else:
             self.critic_net = CriticNet(self.num_states, self.num_actions) 
             self.actor_net = ActorNet(self.num_states, self.num_actions)

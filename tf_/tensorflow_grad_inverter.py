@@ -1,5 +1,4 @@
-#Reference:
-#https://github.com/MOCR/
+#Reference: https://github.com/MOCR/
 
 import tensorflow as tf
 
