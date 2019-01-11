@@ -1,0 +1,401 @@
+*** Episode :     1 | Time :  12.71 s | Rewards :   -34.835 | Average :   -34.835 |
+*** Episode :     2 | Time :  11.62 s | Rewards :   -41.341 | Average :   -38.088 |
+*** Episode :     3 | Time :  11.56 s | Rewards :   -16.262 | Average :   -30.813 |
+*** Episode :     4 | Time :  11.64 s | Rewards :   159.134 | Average :    16.674 |
+*** Episode :     5 | Time :  11.63 s | Rewards :   -35.829 | Average :     6.173 |
+*** Episode :     6 | Time :  23.42 s | Rewards :  -209.154 | Average :   -29.715 |
+*** Episode :     7 | Time :  23.05 s | Rewards :   -53.845 | Average :   -33.162 |
+*** Episode :     8 | Time :  22.95 s | Rewards :  -183.756 | Average :   -51.986 |
+*** Episode :     9 | Time :  23.02 s | Rewards :   -97.917 | Average :   -57.090 |
+*** Episode :    10 | Time :  23.06 s | Rewards :   -37.841 | Average :   -55.165 | SAVING |
+*** Episode :    11 | Time :  23.34 s | Rewards :  -299.345 | Average :   -81.616 |
+*** Episode :    12 | Time :  23.11 s | Rewards :   161.126 | Average :   -61.369 |
+*** Episode :    13 | Time :  23.20 s | Rewards :   262.370 | Average :   -33.506 |
+*** Episode :    14 | Time :  23.11 s | Rewards :   326.366 | Average :   -16.783 |
+*** Episode :    15 | Time :  23.15 s | Rewards :   -11.880 | Average :   -14.388 |
+*** Episode :    16 | Time :  23.14 s | Rewards :   -25.502 | Average :     3.978 |
+*** Episode :    17 | Time :  23.21 s | Rewards :   152.234 | Average :    24.586 |
+*** Episode :    18 | Time :  23.28 s | Rewards :   356.753 | Average :    78.636 |
+*** Episode :    19 | Time :  23.27 s | Rewards :   309.401 | Average :   119.368 |
+*** Episode :    20 | Time :  23.18 s | Rewards :   392.527 | Average :   162.405 | SAVING |
+*** Episode :    21 | Time :  23.37 s | Rewards :   449.350 | Average :   237.275 |
+*** Episode :    22 | Time :  23.25 s | Rewards :   442.397 | Average :   265.402 |
+*** Episode :    23 | Time :  23.27 s | Rewards :   668.680 | Average :   306.033 |
+*** Episode :    24 | Time :  23.42 s | Rewards :   829.163 | Average :   356.313 |
+*** Episode :    25 | Time :  23.22 s | Rewards :   540.545 | Average :   411.555 |
+*** Episode :    26 | Time :  23.19 s | Rewards :   547.200 | Average :   468.825 |
+*** Episode :    27 | Time :  23.25 s | Rewards :   675.797 | Average :   521.181 |
+*** Episode :    28 | Time :  23.15 s | Rewards :   612.321 | Average :   546.738 |
+*** Episode :    29 | Time :  23.41 s | Rewards :   700.935 | Average :   585.892 |
+*** Episode :    30 | Time :  23.23 s | Rewards :   722.674 | Average :   618.906 | SAVING |
+*** Episode :    31 | Time :  23.54 s | Rewards :   617.047 | Average :   635.676 |
+*** Episode :    32 | Time :  23.36 s | Rewards :   133.149 | Average :   604.751 |
+*** Episode :    33 | Time :  23.32 s | Rewards :   313.042 | Average :   569.187 |
+*** Episode :    34 | Time :  23.26 s | Rewards :   280.012 | Average :   514.272 |
+*** Episode :    35 | Time :  23.61 s | Rewards :   386.100 | Average :   498.828 |
+*** Episode :    36 | Time :  23.19 s | Rewards :   566.979 | Average :   500.806 |
+*** Episode :    37 | Time :  23.41 s | Rewards :   588.294 | Average :   492.055 |
+*** Episode :    38 | Time :  23.40 s | Rewards :   524.489 | Average :   483.272 |
+*** Episode :    39 | Time :  23.41 s | Rewards :   571.178 | Average :   470.296 |
+*** Episode :    40 | Time :  23.43 s | Rewards :   699.241 | Average :   467.953 | SAVING |
+*** Episode :    41 | Time :  23.56 s | Rewards :   502.913 | Average :   456.540 |
+*** Episode :    42 | Time :  23.38 s | Rewards :   616.475 | Average :   504.872 |
+*** Episode :    43 | Time :  23.34 s | Rewards :   596.435 | Average :   533.212 |
+*** Episode :    44 | Time :  23.48 s | Rewards :   838.180 | Average :   589.028 |
+*** Episode :    45 | Time :  23.43 s | Rewards :   840.521 | Average :   634.470 |
+*** Episode :    46 | Time :  23.29 s | Rewards :   787.688 | Average :   656.541 |
+*** Episode :    47 | Time :  23.44 s | Rewards :   827.672 | Average :   680.479 |
+*** Episode :    48 | Time :  23.54 s | Rewards :   788.607 | Average :   706.891 |
+*** Episode :    49 | Time :  23.32 s | Rewards :   637.072 | Average :   713.480 |
+*** Episode :    50 | Time :  23.33 s | Rewards :   587.849 | Average :   702.341 | SAVING |
+*** Episode :    51 | Time :  23.59 s | Rewards :   561.947 | Average :   708.245 |
+*** Episode :    52 | Time :  23.40 s | Rewards :   706.368 | Average :   717.234 |
+*** Episode :    53 | Time :  23.50 s | Rewards :   773.314 | Average :   734.922 |
+*** Episode :    54 | Time :  23.46 s | Rewards :   683.358 | Average :   719.440 |
+*** Episode :    55 | Time :  23.28 s | Rewards :   805.829 | Average :   715.970 |
+*** Episode :    56 | Time :  23.46 s | Rewards :   579.604 | Average :   695.162 |
+*** Episode :    57 | Time :  23.59 s | Rewards :   582.373 | Average :   670.632 |
+*** Episode :    58 | Time :  23.50 s | Rewards :   493.158 | Average :   641.087 |
+*** Episode :    59 | Time :  23.56 s | Rewards :   874.681 | Average :   664.848 |
+*** Episode :    60 | Time :  23.66 s | Rewards :   797.328 | Average :   685.796 | SAVING |
+*** Episode :    61 | Time :  23.71 s | Rewards :   867.936 | Average :   716.395 |
+*** Episode :    62 | Time :  23.44 s | Rewards :   867.195 | Average :   732.477 |
+*** Episode :    63 | Time :  23.40 s | Rewards :   913.972 | Average :   746.543 |
+*** Episode :    64 | Time :  23.53 s | Rewards :   980.827 | Average :   776.290 |
+*** Episode :    65 | Time :  23.74 s | Rewards :   945.246 | Average :   790.232 |
+*** Episode :    66 | Time :  23.55 s | Rewards :   820.735 | Average :   814.345 |
+*** Episode :    67 | Time :  23.60 s | Rewards :   813.974 | Average :   837.505 |
+*** Episode :    68 | Time :  23.62 s | Rewards :   775.851 | Average :   865.774 |
+*** Episode :    69 | Time :  23.61 s | Rewards :   596.294 | Average :   837.936 |
+*** Episode :    70 | Time :  23.79 s | Rewards :   927.180 | Average :   850.921 | SAVING |
+*** Episode :    71 | Time :  23.84 s | Rewards :   885.311 | Average :   852.659 |
+*** Episode :    72 | Time :  23.59 s | Rewards :  1081.237 | Average :   874.063 |
+*** Episode :    73 | Time :  23.63 s | Rewards :  1121.063 | Average :   894.772 |
+*** Episode :    74 | Time :  23.63 s | Rewards :   760.320 | Average :   872.721 |
+*** Episode :    75 | Time :  23.69 s | Rewards :   913.796 | Average :   869.576 |
+*** Episode :    76 | Time :  23.56 s | Rewards :   936.692 | Average :   881.172 |
+*** Episode :    77 | Time :  23.84 s | Rewards :   864.971 | Average :   886.272 |
+*** Episode :    78 | Time :  23.69 s | Rewards :   960.240 | Average :   904.711 |
+*** Episode :    79 | Time :  23.63 s | Rewards :  1112.093 | Average :   956.290 |
+*** Episode :    80 | Time :  23.66 s | Rewards :  1073.572 | Average :   970.930 | SAVING |
+*** Episode :    81 | Time :  23.85 s | Rewards :  1066.926 | Average :   989.091 |
+*** Episode :    82 | Time :  23.67 s | Rewards :   642.910 | Average :   945.258 |
+*** Episode :    83 | Time :  23.93 s | Rewards :   899.473 | Average :   923.099 |
+*** Episode :    84 | Time :  23.80 s | Rewards :   913.501 | Average :   938.417 |
+*** Episode :    85 | Time :  23.75 s | Rewards :   832.382 | Average :   930.276 |
+*** Episode :    86 | Time :  23.76 s | Rewards :   839.936 | Average :   920.600 |
+*** Episode :    87 | Time :  23.71 s | Rewards :   784.424 | Average :   912.546 |
+*** Episode :    88 | Time :  23.72 s | Rewards :   756.054 | Average :   892.127 |
+*** Episode :    89 | Time :  23.88 s | Rewards :   805.390 | Average :   861.457 |
+*** Episode :    90 | Time :  23.95 s | Rewards :   847.682 | Average :   838.868 | SAVING |
+*** Episode :    91 | Time :  23.87 s | Rewards :   854.726 | Average :   817.648 |
+*** Episode :    92 | Time :  23.72 s | Rewards :   756.027 | Average :   828.959 |
+*** Episode :    93 | Time :  23.79 s | Rewards :   624.044 | Average :   801.417 |
+*** Episode :    94 | Time :  23.72 s | Rewards :   981.437 | Average :   808.210 |
+*** Episode :    95 | Time :  24.03 s | Rewards :   786.732 | Average :   803.645 |
+*** Episode :    96 | Time :  24.14 s | Rewards :   879.599 | Average :   807.612 |
+*** Episode :    97 | Time :  24.00 s | Rewards :  1033.760 | Average :   832.545 |
+*** Episode :    98 | Time :  23.86 s | Rewards :   750.572 | Average :   831.997 |
+*** Episode :    99 | Time :  23.78 s | Rewards :  1033.218 | Average :   854.780 |
+*** Episode :   100 | Time :  23.82 s | Rewards :   950.460 | Average :   865.058 | SAVING |
+*** Episode :   101 | Time :  24.09 s | Rewards :   941.085 | Average :   873.693 |
+*** Episode :   102 | Time :  23.87 s | Rewards :   939.686 | Average :   892.059 |
+*** Episode :   103 | Time :  23.98 s | Rewards :   820.276 | Average :   911.683 |
+*** Episode :   104 | Time :  23.86 s | Rewards :   791.128 | Average :   892.652 |
+*** Episode :   105 | Time :  23.98 s | Rewards :   937.572 | Average :   907.736 |
+*** Episode :   106 | Time :  24.06 s | Rewards :  1022.702 | Average :   922.046 |
+*** Episode :   107 | Time :  24.11 s | Rewards :  1227.163 | Average :   941.386 |
+*** Episode :   108 | Time :  24.34 s | Rewards :   759.545 | Average :   942.283 |
+*** Episode :   109 | Time :  24.74 s | Rewards :  1068.605 | Average :   945.822 |
+*** Episode :   110 | Time :  24.13 s | Rewards :  1056.342 | Average :   956.410 | SAVING |
+*** Episode :   111 | Time :  24.14 s | Rewards :  1179.345 | Average :   980.236 |
+*** Episode :   112 | Time :  24.00 s | Rewards :  1085.178 | Average :   994.786 |
+*** Episode :   113 | Time :  24.45 s | Rewards :  1060.497 | Average :  1018.808 |
+*** Episode :   114 | Time :  24.18 s | Rewards :   885.208 | Average :  1028.216 |
+*** Episode :   115 | Time :  24.16 s | Rewards :   120.981 | Average :   946.556 |
+*** Episode :   116 | Time :  24.21 s | Rewards :   779.503 | Average :   922.237 |
+*** Episode :   117 | Time :  24.14 s | Rewards :   877.249 | Average :   887.245 |
+*** Episode :   118 | Time :  24.32 s | Rewards :   770.009 | Average :   888.292 |
+*** Episode :   119 | Time :  24.52 s | Rewards :  1088.836 | Average :   890.315 |
+*** Episode :   120 | Time :  24.70 s | Rewards :   842.948 | Average :   868.975 | SAVING |
+*** Episode :   121 | Time :  24.34 s | Rewards :   786.601 | Average :   829.701 |
+*** Episode :   122 | Time :  24.14 s | Rewards :   761.252 | Average :   797.308 |
+*** Episode :   123 | Time :  24.30 s | Rewards :   884.448 | Average :   779.703 |
+*** Episode :   124 | Time :  24.21 s | Rewards :   911.786 | Average :   782.361 |
+*** Episode :   125 | Time :  24.52 s | Rewards :   666.925 | Average :   836.956 |
+*** Episode :   126 | Time :  24.27 s | Rewards :  -319.393 | Average :   727.066 |
+*** Episode :   127 | Time :  24.24 s | Rewards :  -150.110 | Average :   624.330 |
+*** Episode :   128 | Time :  24.13 s | Rewards :  -165.095 | Average :   530.820 |
+*** Episode :   129 | Time :  24.26 s | Rewards :  -291.819 | Average :   392.754 |
+*** Episode :   130 | Time :  24.30 s | Rewards :  -347.017 | Average :   273.758 | SAVING |
+*** Episode :   131 | Time :  24.64 s | Rewards :  -234.023 | Average :   171.695 |
+*** Episode :   132 | Time :  24.58 s | Rewards :  -285.240 | Average :    67.046 |
+*** Episode :   133 | Time :  24.51 s | Rewards :  -373.976 | Average :   -58.796 |
+*** Episode :   134 | Time :  26.90 s | Rewards :  -370.946 | Average :  -187.069 |
+*** Episode :   135 | Time :  24.50 s | Rewards :    39.074 | Average :  -249.855 |
+*** Episode :   136 | Time :  24.60 s | Rewards :   584.290 | Average :  -159.486 |
+*** Episode :   137 | Time :  24.56 s | Rewards :   230.912 | Average :  -121.384 |
+*** Episode :   138 | Time :  24.39 s | Rewards :   856.288 | Average :   -19.246 |
+*** Episode :   139 | Time :  24.56 s | Rewards :   981.381 | Average :   108.074 |
+*** Episode :   140 | Time :  24.76 s | Rewards :   637.083 | Average :   206.484 | SAVING |
+*** Episode :   141 | Time :  24.70 s | Rewards :   679.903 | Average :   297.877 |
+*** Episode :   142 | Time :  24.58 s | Rewards :   784.037 | Average :   404.805 |
+*** Episode :   143 | Time :  24.87 s | Rewards :   851.668 | Average :   527.369 |
+*** Episode :   144 | Time :  24.86 s | Rewards :   893.195 | Average :   653.783 |
+*** Episode :   145 | Time :  24.71 s | Rewards :   629.538 | Average :   712.829 |
+*** Episode :   146 | Time :  24.65 s | Rewards :   724.645 | Average :   726.865 |
+*** Episode :   147 | Time :  24.79 s | Rewards :   870.830 | Average :   790.857 |
+*** Episode :   148 | Time :  24.89 s | Rewards :   803.294 | Average :   785.557 |
+*** Episode :   149 | Time :  24.99 s | Rewards :   552.869 | Average :   742.706 |
+*** Episode :   150 | Time :  24.77 s | Rewards :   738.780 | Average :   752.876 | SAVING |
+*** Episode :   151 | Time :  25.01 s | Rewards :   688.497 | Average :   753.735 |
+*** Episode :   152 | Time :  24.96 s | Rewards :   708.130 | Average :   746.145 |
+*** Episode :   153 | Time :  24.99 s | Rewards :   727.511 | Average :   733.729 |
+*** Episode :   154 | Time :  24.91 s | Rewards :   759.557 | Average :   720.365 |
+*** Episode :   155 | Time :  25.16 s | Rewards :   918.937 | Average :   749.305 |
+*** Episode :   156 | Time :  24.91 s | Rewards :   482.805 | Average :   725.121 |
+*** Episode :   157 | Time :  25.06 s | Rewards :   650.992 | Average :   703.137 |
+*** Episode :   158 | Time :  25.03 s | Rewards :   669.726 | Average :   689.781 |
+*** Episode :   159 | Time :  25.26 s | Rewards :   489.191 | Average :   683.413 |
+*** Episode :   160 | Time :  25.16 s | Rewards :   667.484 | Average :   676.283 | SAVING |
+*** Episode :   161 | Time :  25.15 s | Rewards :   629.642 | Average :   670.397 |
+*** Episode :   162 | Time :  25.16 s | Rewards :   684.808 | Average :   668.065 |
+*** Episode :   163 | Time :  25.13 s | Rewards :   687.666 | Average :   664.081 |
+*** Episode :   164 | Time :  25.35 s | Rewards :   900.452 | Average :   678.170 |
+*** Episode :   165 | Time :  25.27 s | Rewards :   758.229 | Average :   662.100 |
+*** Episode :   166 | Time :  25.25 s | Rewards :   645.480 | Average :   678.367 |
+*** Episode :   167 | Time :  25.37 s | Rewards :   727.087 | Average :   685.977 |
+*** Episode :   168 | Time :  25.40 s | Rewards :   777.220 | Average :   696.726 |
+*** Episode :   169 | Time :  25.38 s | Rewards :   809.920 | Average :   728.799 |
+*** Episode :   170 | Time :  25.47 s | Rewards :   592.993 | Average :   721.350 | SAVING |
+*** Episode :   171 | Time :  25.50 s | Rewards :   748.924 | Average :   733.278 |
+*** Episode :   172 | Time :  25.78 s | Rewards :   646.274 | Average :   729.425 |
+*** Episode :   173 | Time :  25.58 s | Rewards :   713.730 | Average :   732.031 |
+	*** Episode :   174 | Time :  25.38 s | Rewards :   693.592 | Average :   711.345 |
+*** Episode :   175 | Time :  25.31 s | Rewards :   459.858 | Average :   681.508 |
+*** Episode :   176 | Time :  25.34 s | Rewards :   661.912 | Average :   683.151 |
+*** Episode :   177 | Time :  25.54 s | Rewards :   424.018 | Average :   652.844 |
+*** Episode :   178 | Time :  25.59 s | Rewards :   434.909 | Average :   618.613 |
+*** Episode :   179 | Time :  25.50 s | Rewards :   678.846 | Average :   605.506 |
+*** Episode :   180 | Time :  25.69 s | Rewards :   706.992 | Average :   616.906 | SAVING |
+*** Episode :   181 | Time :  25.78 s | Rewards :   579.997 | Average :   600.013 |
+*** Episode :   182 | Time :  25.69 s | Rewards :   693.662 | Average :   604.752 |
+*** Episode :   183 | Time :  25.68 s | Rewards :   782.915 | Average :   611.670 |
+*** Episode :   184 | Time :  25.71 s | Rewards :   707.967 | Average :   613.108 |
+*** Episode :   185 | Time :  25.67 s | Rewards :   668.982 | Average :   634.020 |
+*** Episode :   186 | Time :  25.78 s | Rewards :   837.663 | Average :   651.595 |
+*** Episode :   187 | Time :  25.61 s | Rewards :   887.844 | Average :   697.978 |
+*** Episode :   188 | Time :  25.66 s | Rewards :   711.217 | Average :   725.609 |
+*** Episode :   189 | Time :  26.06 s | Rewards :   782.568 | Average :   735.981 |
+*** Episode :   190 | Time :  25.83 s | Rewards :   631.482 | Average :   728.430 | SAVING |
+*** Episode :   191 | Time :  25.82 s | Rewards :   545.680 | Average :   724.998 |
+*** Episode :   192 | Time :  26.01 s | Rewards :   375.930 | Average :   693.225 |
+*** Episode :   193 | Time :  25.89 s | Rewards :   537.736 | Average :   668.707 |
+*** Episode :   194 | Time :  25.84 s | Rewards :   566.068 | Average :   654.517 |
+*** Episode :   195 | Time :  26.11 s | Rewards :   498.416 | Average :   637.461 |
+*** Episode :   196 | Time :  26.12 s | Rewards :   789.621 | Average :   632.656 |
+*** Episode :   197 | Time :  25.90 s | Rewards :   710.040 | Average :   614.876 |
+*** Episode :   198 | Time :  25.89 s | Rewards :   775.263 | Average :   621.281 |
+*** Episode :   199 | Time :  25.76 s | Rewards :   508.404 | Average :   593.864 |
+*** Episode :   200 | Time :  25.85 s | Rewards :   607.705 | Average :   591.486 | SAVING |
+*** Episode :   201 | Time :  26.29 s | Rewards :   519.295 | Average :   588.848 |
+*** Episode :   202 | Time :  26.04 s | Rewards :   637.577 | Average :   615.013 |
+*** Episode :   203 | Time :  26.22 s | Rewards :   687.298 | Average :   629.969 |
+*** Episode :   204 | Time :  26.16 s | Rewards :   753.461 | Average :   648.708 |
+*** Episode :   205 | Time :  26.24 s | Rewards :   734.557 | Average :   672.322 |
+*** Episode :   206 | Time :  26.30 s | Rewards :   617.442 | Average :   655.104 |
+*** Episode :   207 | Time :  26.45 s | Rewards :   600.949 | Average :   644.195 |
+*** Episode :   208 | Time :  26.19 s | Rewards :   589.742 | Average :   625.643 |
+*** Episode :   209 | Time :  26.20 s | Rewards :   711.126 | Average :   645.915 |
+*** Episode :   210 | Time :  26.17 s | Rewards :   460.927 | Average :   631.238 | SAVING |
+*** Episode :   211 | Time :  26.31 s | Rewards :   351.630 | Average :   614.471 |
+*** Episode :   212 | Time :  26.23 s | Rewards :   733.504 | Average :   624.064 |
+*** Episode :   213 | Time :  26.51 s | Rewards :   553.555 | Average :   610.689 |
+*** Episode :   214 | Time :  26.40 s | Rewards :   533.185 | Average :   588.662 |
+*** Episode :   215 | Time :  26.54 s | Rewards :   784.089 | Average :   593.615 |
+*** Episode :   216 | Time :  26.29 s | Rewards :   636.484 | Average :   595.519 |
+*** Episode :   217 | Time :  26.38 s | Rewards :   505.173 | Average :   585.941 |
+*** Episode :   218 | Time :  26.47 s | Rewards :   715.138 | Average :   598.481 |
+*** Episode :   219 | Time :  26.59 s | Rewards :   666.169 | Average :   593.985 |
+*** Episode :   220 | Time :  26.51 s | Rewards :   526.016 | Average :   600.494 | SAVING |
+*** Episode :   221 | Time :  26.58 s | Rewards :   504.514 | Average :   615.783 |
+*** Episode :   222 | Time :  26.64 s | Rewards :   394.288 | Average :   581.861 |
+*** Episode :   223 | Time :  26.63 s | Rewards :   348.513 | Average :   561.357 |
+*** Episode :   224 | Time :  26.57 s | Rewards :   708.380 | Average :   578.876 |
+*** Episode :   225 | Time :  26.58 s | Rewards :   660.673 | Average :   566.535 |
+*** Episode :   226 | Time :  26.70 s | Rewards :   659.781 | Average :   568.865 |
+*** Episode :   227 | Time :  26.66 s | Rewards :   477.129 | Average :   566.060 |
+*** Episode :   228 | Time :  26.74 s | Rewards :   490.071 | Average :   543.554 |
+*** Episode :   229 | Time :  26.76 s | Rewards :   439.822 | Average :   520.919 |
+*** Episode :   230 | Time :  26.52 s | Rewards :   520.546 | Average :   520.372 | SAVING |
+*** Episode :   231 | Time :  27.04 s | Rewards :   618.788 | Average :   531.799 |
+*** Episode :   232 | Time :  26.76 s | Rewards :   884.038 | Average :   580.774 |
+*** Episode :   233 | Time :  26.83 s | Rewards :   691.629 | Average :   615.086 |
+*** Episode :   234 | Time :  26.91 s | Rewards :   637.876 | Average :   608.035 |
+*** Episode :   235 | Time :  26.78 s | Rewards :   663.643 | Average :   608.332 |
+*** Episode :   236 | Time :  26.75 s | Rewards :   675.774 | Average :   609.932 |
+*** Episode :   237 | Time :  26.53 s | Rewards :   678.708 | Average :   630.090 |
+*** Episode :   238 | Time :  27.07 s | Rewards :   776.384 | Average :   658.721 |
+*** Episode :   239 | Time :  27.01 s | Rewards :   683.361 | Average :   683.075 |
+*** Episode :   240 | Time :  26.96 s | Rewards :   450.375 | Average :   676.058 | SAVING |
+*** Episode :   241 | Time :  27.11 s | Rewards :   389.754 | Average :   653.154 |
+*** Episode :   242 | Time :  27.06 s | Rewards :   718.040 | Average :   636.554 |
+*** Episode :   243 | Time :  27.32 s | Rewards :   826.157 | Average :   650.007 |
+*** Episode :   244 | Time :  27.17 s | Rewards :   677.298 | Average :   653.949 |
+*** Episode :   245 | Time :  27.00 s | Rewards :   869.413 | Average :   674.526 |
+*** Episode :   246 | Time :  27.23 s | Rewards :  1007.645 | Average :   707.714 |
+*** Episode :   247 | Time :  27.18 s | Rewards :   959.591 | Average :   735.802 |
+*** Episode :   248 | Time :  27.23 s | Rewards :   651.817 | Average :   723.345 |
+*** Episode :   249 | Time :  27.70 s | Rewards :   695.838 | Average :   724.593 |
+*** Episode :   250 | Time :  27.78 s | Rewards :   764.295 | Average :   755.985 | SAVING |
+*** Episode :   251 | Time :  27.48 s | Rewards :   450.263 | Average :   762.036 |
+*** Episode :   252 | Time :  27.32 s | Rewards :   512.258 | Average :   741.458 |
+*** Episode :   253 | Time :  27.37 s | Rewards :   634.781 | Average :   722.320 |
+*** Episode :   254 | Time :  27.03 s | Rewards :   652.059 | Average :   719.796 |
+*** Episode :   255 | Time :  27.46 s | Rewards :   521.981 | Average :   685.053 |
+*** Episode :   256 | Time :  27.49 s | Rewards :   574.241 | Average :   641.712 |
+*** Episode :   257 | Time :  27.10 s | Rewards :   397.836 | Average :   585.537 |
+*** Episode :   258 | Time :  27.39 s | Rewards :   411.331 | Average :   561.488 |
+*** Episode :   259 | Time :  27.67 s | Rewards :   508.074 | Average :   542.712 |
+*** Episode :   260 | Time :  27.55 s | Rewards :   558.216 | Average :   522.104 | SAVING |
+*** Episode :   261 | Time :  27.96 s | Rewards :   403.400 | Average :   517.418 |
+*** Episode :   262 | Time :  27.46 s | Rewards :   629.511 | Average :   529.143 |
+*** Episode :   263 | Time :  27.53 s | Rewards :   585.540 | Average :   524.219 |
+*** Episode :   264 | Time :  27.45 s | Rewards :   447.336 | Average :   503.747 |
+*** Episode :   265 | Time :  27.21 s | Rewards :   602.790 | Average :   511.828 |
+*** Episode :   266 | Time :  27.66 s | Rewards :   310.587 | Average :   485.462 |
+*** Episode :   267 | Time :  28.10 s | Rewards :   413.550 | Average :   487.034 |
+*** Episode :   268 | Time :  28.11 s | Rewards :   467.993 | Average :   492.700 |
+*** Episode :   269 | Time :  28.14 s | Rewards :   332.462 | Average :   475.139 |
+*** Episode :   270 | Time :  27.85 s | Rewards :   451.554 | Average :   464.472 | SAVING |
+*** Episode :   271 | Time :  27.82 s | Rewards :   324.738 | Average :   456.606 |
+*** Episode :   272 | Time :  27.54 s | Rewards :   416.149 | Average :   435.270 |
+*** Episode :   273 | Time :  27.84 s | Rewards :   517.267 | Average :   428.443 |
+*** Episode :   274 | Time :  27.75 s | Rewards :   411.368 | Average :   424.846 |
+*** Episode :   275 | Time :  27.75 s | Rewards :   312.602 | Average :   395.827 |
+*** Episode :   276 | Time :  27.65 s | Rewards :   351.414 | Average :   399.910 |
+*** Episode :   277 | Time :  27.85 s | Rewards :   396.916 | Average :   398.246 |
+*** Episode :   278 | Time :  27.90 s | Rewards :   633.028 | Average :   414.750 |
+*** Episode :   279 | Time :  28.19 s | Rewards :   509.882 | Average :   432.492 |
+*** Episode :   280 | Time :  27.96 s | Rewards :   602.530 | Average :   447.589 | SAVING |
+*** Episode :   281 | Time :  28.21 s | Rewards :   606.139 | Average :   475.730 |
+*** Episode :   282 | Time :  27.98 s | Rewards :   466.939 | Average :   480.809 |
+*** Episode :   283 | Time :  27.91 s | Rewards :   313.392 | Average :   460.421 |
+*** Episode :   284 | Time :  27.90 s | Rewards :   369.688 | Average :   456.253 |
+*** Episode :   285 | Time :  28.32 s | Rewards :   367.410 | Average :   461.734 |
+*** Episode :   286 | Time :  28.06 s | Rewards :   372.445 | Average :   463.837 |
+*** Episode :   287 | Time :  28.12 s | Rewards :   513.655 | Average :   475.511 |
+*** Episode :   288 | Time :  28.17 s | Rewards :   461.022 | Average :   458.310 |
+*** Episode :   289 | Time :  28.15 s | Rewards :   291.899 | Average :   436.512 |
+*** Episode :   290 | Time :  28.29 s | Rewards :   192.606 | Average :   395.520 | SAVING |
+*** Episode :   291 | Time :  28.83 s | Rewards :   328.111 | Average :   367.717 |
+*** Episode :   292 | Time :  28.42 s | Rewards :   211.709 | Average :   342.194 |
+*** Episode :   293 | Time :  28.10 s | Rewards :   184.283 | Average :   329.283 |
+*** Episode :   294 | Time :  28.38 s | Rewards :   235.392 | Average :   315.853 |
+*** Episode :   295 | Time :  28.25 s | Rewards :   332.321 | Average :   312.344 |
+*** Episode :   296 | Time :  28.15 s | Rewards :   344.517 | Average :   309.552 |
+*** Episode :   297 | Time :  28.52 s | Rewards :   271.553 | Average :   285.341 |
+*** Episode :   298 | Time :  28.02 s | Rewards :   444.446 | Average :   283.684 |
+*** Episode :   299 | Time :  28.37 s | Rewards :   464.803 | Average :   300.974 |
+*** Episode :   300 | Time :  28.28 s | Rewards :   437.845 | Average :   325.498 | SAVING |
+*** Episode :   301 | Time :  28.36 s | Rewards :   256.282 | Average :   318.315 |
+*** Episode :   302 | Time :  28.63 s | Rewards :   494.774 | Average :   346.622 |
+*** Episode :   303 | Time :  28.62 s | Rewards :    66.603 | Average :   334.854 |
+*** Episode :   304 | Time :  28.46 s | Rewards :   159.176 | Average :   327.232 |
+*** Episode :   305 | Time :  28.42 s | Rewards :   190.927 | Average :   313.093 |
+*** Episode :   306 | Time :  28.39 s | Rewards :   238.096 | Average :   302.450 |
+*** Episode :   307 | Time :  28.46 s | Rewards :   200.642 | Average :   295.359 |
+*** Episode :   308 | Time :  28.67 s | Rewards :   138.202 | Average :   264.735 |
+*** Episode :   309 | Time :  28.78 s | Rewards :   234.807 | Average :   241.735 |
+*** Episode :   310 | Time :  28.64 s | Rewards :   353.779 | Average :   233.329 | SAVING |
+*** Episode :   311 | Time :  28.54 s | Rewards :   164.938 | Average :   224.194 |
+*** Episode :   312 | Time :  28.49 s | Rewards :   254.584 | Average :   200.175 |
+*** Episode :   313 | Time :  28.76 s | Rewards :   421.237 | Average :   235.639 |
+*** Episode :   314 | Time :  28.55 s | Rewards :   365.458 | Average :   256.267 |
+*** Episode :   315 | Time :  29.05 s | Rewards :   501.138 | Average :   287.288 |
+*** Episode :   316 | Time :  28.83 s | Rewards :   389.523 | Average :   302.431 |
+*** Episode :   317 | Time :  28.68 s | Rewards :   374.795 | Average :   319.846 |
+*** Episode :   318 | Time :  28.47 s | Rewards :   435.993 | Average :   349.625 |
+*** Episode :   319 | Time :  28.70 s | Rewards :   571.558 | Average :   383.300 |
+*** Episode :   320 | Time :  28.77 s | Rewards :   159.568 | Average :   363.879 | SAVING |
+*** Episode :   321 | Time :  29.13 s | Rewards :   387.638 | Average :   386.149 |
+*** Episode :   322 | Time :  28.75 s | Rewards :   453.427 | Average :   406.033 |
+*** Episode :   323 | Time :  28.92 s | Rewards :   754.893 | Average :   439.399 |
+*** Episode :   324 | Time :  28.89 s | Rewards :   646.828 | Average :   467.536 |
+*** Episode :   325 | Time :  28.86 s | Rewards :   346.360 | Average :   452.058 |
+*** Episode :   326 | Time :  28.82 s | Rewards :   635.935 | Average :   476.699 |
+*** Episode :   327 | Time :  29.13 s | Rewards :   561.312 | Average :   495.351 |
+*** Episode :   328 | Time :  28.96 s | Rewards :   488.021 | Average :   500.554 |
+*** Episode :   329 | Time :  29.13 s | Rewards :   357.223 | Average :   479.121 |
+*** Episode :   330 | Time :  29.10 s | Rewards :   289.386 | Average :   492.102 | SAVING |
+*** Episode :   331 | Time :  29.13 s | Rewards :   410.694 | Average :   494.408 |
+*** Episode :   332 | Time :  29.10 s | Rewards :   491.002 | Average :   498.165 |
+*** Episode :   333 | Time :  29.22 s | Rewards :   436.522 | Average :   466.328 |
+*** Episode :   334 | Time :  29.01 s | Rewards :   362.810 | Average :   437.927 |
+*** Episode :   335 | Time :  28.98 s | Rewards :   256.955 | Average :   428.986 |
+*** Episode :   336 | Time :  29.21 s | Rewards :   521.644 | Average :   417.557 |
+*** Episode :   337 | Time :  29.06 s | Rewards :   414.915 | Average :   402.917 |
+*** Episode :   338 | Time :  29.20 s | Rewards :   648.036 | Average :   418.919 |
+*** Episode :   339 | Time :  29.79 s | Rewards :   631.176 | Average :   446.314 |
+*** Episode :   340 | Time :  29.36 s | Rewards :   579.047 | Average :   475.280 | SAVING |
+*** Episode :   341 | Time :  29.39 s | Rewards :   512.613 | Average :   485.472 |
+*** Episode :   342 | Time :  29.34 s | Rewards :   559.845 | Average :   492.356 |
+*** Episode :   343 | Time :  29.36 s | Rewards :   440.684 | Average :   492.772 |
+*** Episode :   344 | Time :  29.14 s | Rewards :   290.791 | Average :   485.571 |
+*** Episode :   345 | Time :  29.43 s | Rewards :   518.214 | Average :   511.696 |
+*** Episode :   346 | Time :  29.26 s | Rewards :   556.428 | Average :   515.175 |
+*** Episode :   347 | Time :  29.34 s | Rewards :   391.940 | Average :   512.877 |
+*** Episode :   348 | Time :  29.18 s | Rewards :   458.611 | Average :   493.935 |
+*** Episode :   349 | Time :  29.40 s | Rewards :   400.648 | Average :   470.882 |
+*** Episode :   350 | Time :  29.32 s | Rewards :   457.745 | Average :   458.752 | SAVING |
+*** Episode :   351 | Time :  29.82 s | Rewards :   485.627 | Average :   456.053 |
+*** Episode :   352 | Time :  29.51 s | Rewards :   613.087 | Average :   461.377 |
+*** Episode :   353 | Time :  29.71 s | Rewards :   666.707 | Average :   483.980 |
+*** Episode :   354 | Time :  29.67 s | Rewards :   572.403 | Average :   512.141 |
+*** Episode :   355 | Time :  29.62 s | Rewards :   284.698 | Average :   488.789 |
+*** Episode :   356 | Time :  29.59 s | Rewards :   536.567 | Average :   486.803 |
+*** Episode :   357 | Time :  29.98 s | Rewards :   419.021 | Average :   489.511 |
+*** Episode :   358 | Time :  29.77 s | Rewards :   425.372 | Average :   486.188 |
+*** Episode :   359 | Time :  29.76 s | Rewards :   409.630 | Average :   487.086 |
+*** Episode :   360 | Time :  29.74 s | Rewards :   294.318 | Average :   470.743 | SAVING |
+*** Episode :   361 | Time :  29.58 s | Rewards :   379.566 | Average :   460.137 |
+	*** Episode :   362 | Time :  29.77 s | Rewards :   508.483 | Average :   449.677 |
+*** Episode :   363 | Time :  29.99 s | Rewards :   542.103 | Average :   437.216 |
+*** Episode :   364 | Time :  29.97 s | Rewards :   410.403 | Average :   421.016 |
+*** Episode :   365 | Time :  29.78 s | Rewards :   412.775 | Average :   433.824 |
+*** Episode :   366 | Time :  29.44 s | Rewards :   314.340 | Average :   411.601 |
+*** Episode :   367 | Time :  29.73 s | Rewards :   145.360 | Average :   384.235 |
+*** Episode :   368 | Time :  29.83 s | Rewards :   320.140 | Average :   373.712 |
+*** Episode :   369 | Time :  29.82 s | Rewards :   358.111 | Average :   368.560 |
+*** Episode :   370 | Time :  29.75 s | Rewards :   482.176 | Average :   387.346 | SAVING |
+*** Episode :   371 | Time :  29.80 s | Rewards :   425.694 | Average :   391.959 |
+*** Episode :   372 | Time :  29.82 s | Rewards :   418.677 | Average :   382.978 |
+*** Episode :   373 | Time :  29.81 s | Rewards :   349.027 | Average :   363.670 |
+*** Episode :   374 | Time :  30.05 s | Rewards :   504.441 | Average :   373.074 |
+*** Episode :   375 | Time :  30.68 s | Rewards :   290.595 | Average :   360.856 |
+*** Episode :   376 | Time :  30.14 s | Rewards :   374.392 | Average :   366.861 |
+*** Episode :   377 | Time :  30.05 s | Rewards :   326.179 | Average :   384.943 |
+*** Episode :   378 | Time :  29.88 s | Rewards :   237.460 | Average :   376.675 |
+*** Episode :   379 | Time :  29.90 s | Rewards :   376.663 | Average :   378.530 |
+*** Episode :   380 | Time :  30.06 s | Rewards :   286.804 | Average :   358.993 | SAVING |
+*** Episode :   381 | Time :  30.44 s | Rewards :   123.212 | Average :   328.745 |
+*** Episode :   382 | Time :  30.06 s | Rewards :   504.334 | Average :   337.311 |
+*** Episode :   383 | Time :  30.06 s | Rewards :   515.825 | Average :   353.990 |
+*** Episode :   384 | Time :  30.22 s | Rewards :   422.841 | Average :   345.830 |
+*** Episode :   385 | Time :  30.05 s | Rewards :   302.234 | Average :   346.994 |
+*** Episode :   386 | Time :  30.07 s | Rewards :   324.496 | Average :   342.005 |
+*** Episode :   387 | Time :  30.29 s | Rewards :   462.736 | Average :   355.660 |
+*** Episode :   388 | Time :  30.23 s | Rewards :   456.273 | Average :   377.542 |
+*** Episode :   389 | Time :  30.02 s | Rewards :   306.987 | Average :   370.574 |
+*** Episode :   390 | Time :  30.02 s | Rewards :   478.679 | Average :   389.762 | SAVING |
+*** Episode :   391 | Time :  30.27 s | Rewards :   434.825 | Average :   420.923 |
+*** Episode :   392 | Time :  30.09 s | Rewards :   368.713 | Average :   407.361 |
+*** Episode :   393 | Time :  30.52 s | Rewards :   297.693 | Average :   385.548 |
+*** Episode :   394 | Time :  30.41 s | Rewards :   467.021 | Average :   389.966 |
+*** Episode :   395 | Time :  30.10 s | Rewards :   641.515 | Average :   423.894 |
+*** Episode :   396 | Time :  30.26 s | Rewards :   412.299 | Average :   432.674 |
+*** Episode :   397 | Time :  30.19 s | Rewards :   671.951 | Average :   453.596 |
+*** Episode :   398 | Time :  30.33 s | Rewards :   556.393 | Average :   463.608 |
+*** Episode :   399 | Time :  30.08 s | Rewards :   524.721 | Average :   485.381 |
+*** Episode :   400 | Time :  30.26 s | Rewards :   533.707 | Average :   490.884 | SAVING |
+*** Episode :   401 | Time :  30.53 s | Rewards :   569.381 | Average :   504.339 |
