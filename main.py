@@ -7,7 +7,7 @@ from ddpg.ou_noise import OUNoise
 import dill as pickle
 import os
 #specify parameters here:
-episodes=15#10000
+episodes=10000
 is_batch_norm = True #batch normalization switch
 agent = 0;
 gym.envs.register(
