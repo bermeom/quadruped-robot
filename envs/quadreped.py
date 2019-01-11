@@ -37,7 +37,7 @@ class QuadrepedEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         vel_y = (qpos_after[1] - qpos_before[1])/self.dt;
         lin_vel_cost =   (vel_x+vel_y*0)
         quad_ctrl_cost = 0.1 * np.square(data.ctrl).sum()
-        quad_impact_cost = .5e-6 * np.square(data.cfrc_ext).sum()
+        quad_impact_cost = .5e-7 * np.square(data.cfrc_ext).sum()
         quad_impact_cost = min(quad_impact_cost, 10)
         reward = ((lin_vel_cost - quad_ctrl_cost - quad_impact_cost) + alive_bonus)
         orientation = qpos_after.flat[3:7]; # w x y z
