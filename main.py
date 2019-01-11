@@ -11,15 +11,15 @@ episodes=10000
 is_batch_norm = True #batch normalization switch
 agent = 0;
 gym.envs.register(
-    id='quadreped-robot-v0',
-    entry_point='envs.quadreped:QuadrepedEnv',
+    id='quadruped-robot-v0',
+    entry_point='envs.quadruped:QuadrupedEnv',
     max_episode_steps=10000,
     reward_threshold=4800.0,
 )
 
 def main():
-    experiment= 'quadreped-robot-v0' #specify environments here
-    backupNameFile = "quadreped_robot_0"
+    experiment= 'quadruped-robot-v0' #specify environments here
+    backupNameFile = "quadruped_robot_0"
     
     backupPathFile = "storage/"+backupNameFile
     bFullPath = os.path.join(os.path.split(os.path.abspath(__file__))[0], backupPathFile);

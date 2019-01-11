@@ -2,7 +2,7 @@
 # Run learning 
 ```sh
 $   cd learning
-$   ./scripts/script_9_quadreped_DDPG.sh
+$   ./scripts/script_9_quadruped_DDPG.sh
 ```
 
 ### Requirements

@@ -1,2 +1,2 @@
-from envs.quadreped import QuadrepedEnv
+from envs.quadruped import QuadrupedEnv
 

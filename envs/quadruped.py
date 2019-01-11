@@ -10,9 +10,9 @@ def mass_center(model, sim):
     xpos = sim.data.xipos
     return (np.sum(mass * xpos, 0) / np.sum(mass))[0]
 
-class QuadrepedEnv(mujoco_env.MujocoEnv, utils.EzPickle):
+class QuadrupedEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
-        xmlpath = ((os.path.join((os.path.split(os.path.abspath(__file__))[0]), "xml/quadrepedrobot.xml")));
+        xmlpath = ((os.path.join((os.path.split(os.path.abspath(__file__))[0]), "xml/quadrupedrobot.xml")));
         mujoco_env.MujocoEnv.__init__(self, xmlpath, 5)
         utils.EzPickle.__init__(self)
 

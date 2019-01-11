@@ -28,7 +28,7 @@
         - fshin     hinge       torque (N m)
         - ffoot     hinge       torque (N m)
 -->
-<mujoco model="quadrepedrobot">
+<mujoco model="quadrupedrobot">
   <!-- coordinate="local" settotalmass="14" coordinate="local" -->
   <compiler angle="radian"  inertiafromgeom="true"  />
   <default>

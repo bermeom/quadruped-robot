@@ -3,20 +3,20 @@ import numpy as np
 import gym
 
 gym.envs.register(
-    id='quadreped-robot-v0',
-    entry_point='envs.quadreped:QuadrepedEnv',
+    id='quadruped-robot-v0',
+    entry_point='envs.quadruped:QuadrupedEnv',
     max_episode_steps=10000,
     reward_threshold=4800.0,
 )
 
 
 ##### SOURCE GYM HALFCHEETAH
-class source_quadreped_robot( source_gym ):
+class source_quadruped_robot( source_gym ):
 
     ### __INIT__
     def __init__( self ):
 
-        source_gym.__init__( self , 'quadreped-robot-v0' )
+        source_gym.__init__( self , 'quadruped-robot-v0' )
 
     ### INFORMATION
     def num_actions( self ): return self.env.action_space.shape[0]
