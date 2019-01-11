@@ -5,6 +5,7 @@ import math
 LEARNING_RATE = 0.0001
 BATCH_SIZE = 64
 TAU = 0.001
+
 class ActorNet:
     """ Actor Network Model of DDPG Algorithm """
     
@@ -13,7 +14,6 @@ class ActorNet:
         with self.g.as_default():
             self.sess = tf.InteractiveSession()
             
-           
             #actor network model parameters:
             self.W1_a, self.B1_a, self.W2_a, self.B2_a, self.W3_a, self.B3_a,\
             self.actor_state_in, self.actor_model = self.create_actor_net(num_states, num_actions)
@@ -56,15 +56,15 @@ class ActorNet:
         N_HIDDEN_1 = 400
         N_HIDDEN_2 = 300
         actor_state_in = tf.placeholder("float",[None,num_states])    
-        W1_a=tf.Variable(tf.random_uniform([num_states,N_HIDDEN_1],-1/math.sqrt(num_states),1/math.sqrt(num_states)))
-        B1_a=tf.Variable(tf.random_uniform([N_HIDDEN_1],-1/math.sqrt(num_states),1/math.sqrt(num_states)))
-        W2_a=tf.Variable(tf.random_uniform([N_HIDDEN_1,N_HIDDEN_2],-1/math.sqrt(N_HIDDEN_1),1/math.sqrt(N_HIDDEN_1)))
-        B2_a=tf.Variable(tf.random_uniform([N_HIDDEN_2],-1/math.sqrt(N_HIDDEN_1),1/math.sqrt(N_HIDDEN_1)))
-        W3_a=tf.Variable(tf.random_uniform([N_HIDDEN_2,num_actions],-0.003,0.003))
-        B3_a=tf.Variable(tf.random_uniform([num_actions],-0.003,0.003))
+        W1_a = tf.Variable(tf.random_uniform([num_states,N_HIDDEN_1],-1/math.sqrt(num_states),1/math.sqrt(num_states)))
+        B1_a = tf.Variable(tf.random_uniform([N_HIDDEN_1],-1/math.sqrt(num_states),1/math.sqrt(num_states)))
+        W2_a = tf.Variable(tf.random_uniform([N_HIDDEN_1,N_HIDDEN_2],-1/math.sqrt(N_HIDDEN_1),1/math.sqrt(N_HIDDEN_1)))
+        B2_a = tf.Variable(tf.random_uniform([N_HIDDEN_2],-1/math.sqrt(N_HIDDEN_1),1/math.sqrt(N_HIDDEN_1)))
+        W3_a = tf.Variable(tf.random_uniform([N_HIDDEN_2,num_actions],-0.003,0.003))
+        B3_a = tf.Variable(tf.random_uniform([num_actions],-0.003,0.003))
     
-        H1_a=tf.nn.softplus(tf.matmul(actor_state_in,W1_a)+B1_a)
-        H2_a=tf.nn.tanh(tf.matmul(H1_a,W2_a)+B2_a)
+        H1_a = tf.nn.softplus(tf.matmul(actor_state_in,W1_a)+B1_a)
+        H2_a = tf.nn.tanh(tf.matmul(H1_a,W2_a)+B2_a)
         actor_model=tf.matmul(H2_a,W3_a) + B3_a
         return W1_a, B1_a, W2_a, B2_a, W3_a, B3_a, actor_state_in, actor_model
         
@@ -81,3 +81,4 @@ class ActorNet:
     
     def update_target_actor(self):
         self.sess.run(self.update_target_actor_op) 
+        

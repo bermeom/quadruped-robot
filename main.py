@@ -1,110 +1,94 @@
-#!/usr/bin/env python3
-"""
-Shows how to toss a capsule to a container.
-"""
+# import .
+import gym
+from gym.spaces import Box, Discrete
 import numpy as np
-import math
-from pprint import pprint
-import mujoco_py as mpy #import load_model_from_path, MjSim, MjViewer
+from ddpg.ddpg import DDPG
+from ddpg.ou_noise import OUNoise
+import dill as pickle
 import os
+#specify parameters here:
+episodes=15#10000
+is_batch_norm = True #batch normalization switch
+agent = 0;
+gym.envs.register(
+    id='quadreped-robot-v0',
+    entry_point='envs.quadreped:QuadrepedEnv',
+    max_episode_steps=10000,
+    reward_threshold=4800.0,
+)
 
-   
-model = mpy.mujoco_py.load_model_from_path("xml/quadrepedrobot.xml")
-# model = mpy.mujoco_py.load_model_from_path("xml/humanoid.xml")
-sim = mpy.MjSim(model)
-
-viewer = mpy.MjViewer(sim)
-
-
-sim_state = sim.get_state()
-
-pprint (sim_state);
-
-k = 1;
-qfrc_target = sim.data.qfrc_applied;
-force = qfrc_target;#np.array([0, +150, 0],dtype=np.float64);
-# force[1]=150;
-force0 = np.array([0, -150, 0],dtype=np.float64);
-torque = np.array([0, 0, 0],dtype=np.float64);
-point = np.array([0, 0, 0],dtype=np.float64) ;
-body = 1;
-qfrc_target = sim.data.qfrc_applied;
-perp = mpy.cymj.PyMjvPerturb();
-# print("start",qfrc_target);
-sw = True;
-while True:
-    print ("0 - orientation -> body_quat ",sim.data.qpos.flat[3:7])
-    # print ("0 - orientation -> body_quat ",sim.data.qpos.flat[0:7])
-    mat = np.zeros(9, dtype=np.float64)
-    mpy.functions.mju_quat2Mat(mat, sim.data.body_xquat[2]);
-    # print ("0 - orientation -> ",mat)
-    # print("0 - data -> ",sim.data.qM)
+def main():
+    experiment= 'quadreped-robot-v0' #specify environments here
+    backupNameFile = "quadreped_robot_0"
     
-    # sw = False;
-    sim.set_state(sim_state)
-    print ("0 - orientation -> body_quat ",sim.data.qpos.flat[3:7])
-    mat = np.zeros(9, dtype=np.float64)
-    mpy.functions.mju_quat2Mat(mat, sim.data.body_xquat[2]);
-    # print ("orientation -> ",mat)
-    # print("data -> ",sim.data.qM)
-    # print("qfrc_applied[0]-> ",sim.data.qfrc_applied);
-    force[1]=-150;
-    # mpy.functions.mj_applyFT(sim.model,sim.data,force,torque,point,body,sim.data.qfrc_applied);
-    sim.step();
-    # print("qfrc_applied[1]-> ",sim.data.qfrc_applied);
-    # mpy.functions.mj_applyFT(sim.model,sim.data,-sim.data.qfrc_applied,torque,point,body,sim.data.qfrc_applied);
-    if sw :
-        force[1]=0;
-    sw =  not sw;
-    # sim.step();
-    # sim.data.qfrc_applied[0]=0;
-    # mpy.functions.mjv_applyPerturbForce(sim.model,sim.data,perp);
-    # print("qfrc_applied[2]-> ",sim.data.qfrc_applied);
+    backupPathFile = "storage/"+backupNameFile
+    bFullPath = os.path.join(os.path.split(os.path.abspath(__file__))[0], backupPathFile);
     
-    # pprint(sim.data.qpos.flat)   
-
-    # sim.data.ctrl[4*0+3]=-1;
-    # sim.data.ctrl[4*1+3]=-1;
-    # sim.data.ctrl[4*2+3]=-1;
-    # sim.data.ctrl[4*3+3]=-1;
-    sim.step();
-    observations = np.concatenate([
-            sim.data.qpos,
-            sim.data.qvel,
-        ]);
-    orientation = sim.data.qpos.flat[3:7];
-    # print(len(sim.data.qpos)," ",len(sim.data.qvel),"\n",observations);
-    for i in range(500):
-        if i < 200 | i > 800 :
-            sim.data.ctrl[3]=1;
-            sim.data.ctrl[k] = -0.5
-            sim.data.ctrl[k+4] = 0.5
-            sim.data.ctrl[k+2*4] = -0.5
-            sim.data.ctrl[k+3*4] =  0.5
-        else:
-        #     sim.data.ctrl[3]=-1;
-            sim.data.ctrl[k] = 1.0/2
-            sim.data.ctrl[k+4] = -1.0/2
-            sim.data.ctrl[k+2*4] = 1.0/2
-            sim.data.ctrl[k+3*4] = -1.0/2
-        sim.step();
-        viewer.render();
-        orientation = sim.data.qpos.flat[3:7]; # w x y z
-        if (orientation[1]+orientation[2]>0.5):
-            break;
-
-        # mpy.functions.mj_applyFT(sim.model,sim.data,force0,torque,point,body,qfrc_target);
-        # print("qfrc_target",qfrc_target);
-    observations = np.concatenate([
-        sim.data.qpos.flat[1:],
-        sim.data.qvel.flat,
-    ]);
-    # print("END",len(sim.data.qpos)," ",len(sim.data.qvel),"\n",observations);
-    # mat = np.zeros(9, dtype=np.float64)
-    # mpy.functions.mju_quat2Mat(mat, sim.data.body_xquat[2]);
-    # print ("orientation -> ",mat)
-    # print("data -> ",sim.data.qM)
+    env= gym.make(experiment)
+    steps= env.spec.timestep_limit #steps per episode    
+    assert isinstance(env.observation_space, Box), "observation space must be continuous"
+    assert isinstance(env.action_space, Box), "action space must be continuous"
     
+    #Randomly initialize critic,actor,target critic, target actor network  and replay buffer   
+    global agent;
+    agent = DDPG(env, is_batch_norm)
+    exploration_noise = OUNoise(env.action_space.shape[0])
+    counter=0
+    reward_per_episode = 0    
+    total_reward=0
+    num_states = env.observation_space.shape[0]
+    num_actions = env.action_space.shape[0]    
+    print ("Number of States:", num_states)
+    print ("Number of Actions:", num_actions)
+    print ("Number of Steps per episode:", steps)
+    #saving reward:
+    reward_st = np.array([0])
+      
     
-    if os.getenv('TESTING') is not None:
-        break
+    for i in range(episodes):
+        print ("==== Starting episode no:",i,"====","\n")
+        observation = env.reset()
+        reward_per_episode = 0
+        for t in range(steps):
+            #rendering environmet (optional)            
+            env.render()
+            x = observation
+            action = agent.evaluate_actor(np.reshape(x,[1,num_states]))
+            noise = exploration_noise.noise()
+            action = action[0] + noise #Select action according to current policy and exploration noise
+            # print ("Action at step", t ," :",action,"\n")
+            
+            observation,reward,done,info=env.step(action)
+            
+            #add s_t,s_t+1,action,reward to experience memory
+            agent.add_experience(x,observation,action,reward,done)
+            #train critic and actor network
+            if counter > 64: 
+                agent.train()
+            reward_per_episode+=reward
+            counter+=1
+            #check if episode ends:
+            if (done or (t == steps-1)):
+                # print ('EPISODE: ',i,' Steps: ',t,' Total Reward: ',reward_per_episode)
+                # print ("Printing reward to file")
+                exploration_noise.reset() #reinitializing random noise for action exploration
+                reward_st = np.append(reward_st,reward_per_episode)
+                np.savetxt('episode_reward.txt',reward_st, newline="\n")
+                print ('\n\n')
+                break
+        # Save some episodes
+        # print(episodes)
+        # if (episodes == 10):
+            # with open(bFullPath+"_EP_"+episodes+".pkl", 'wb') as file:
+            #     pickle.dump(agent, file) 
+            # pickle.dump_session(bFullPath+"_EP_"+episodes+".pkl")
+            # print ('SAVE EPISODE ',episodes)
+            # break;
+    total_reward+=reward_per_episode            
+    print ("Average reward per episode {}".format(total_reward / episodes))    
+    # with open(bFullPath+".pkl", 'wb') as file:
+    #     pickle.dump(agent, file)
+    # pickle.dump_session(bFullPath+".pkl")
+    
+if __name__ == '__main__':
+    main()    

@@ -41,7 +41,13 @@ class DDPG:
         action_min = np.array(env.action_space.low).tolist()        
         action_bounds = [action_max,action_min] 
         self.grad_inv = grad_inverter(action_bounds)
-        
+        @property
+        def getEnv(self):
+            """I'm the 'x' property."""
+            return self.env
+
+        def setEnv(self, env):
+            self.env = value
         
     def evaluate_actor(self, state_t):
         return self.actor_net.evaluate_actor(state_t)
@@ -111,3 +117,6 @@ class DDPG:
         # Update target Critic and actor network
         self.critic_net.update_target_critic()
         self.actor_net.update_target_actor()
+    
+    # @staticmethod
+    # def saveObj(backupPathFile):
