@@ -12,7 +12,7 @@ def mass_center(model, sim):
 
 class QuadrepedEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
-        xmlpath = ((os.path.join(os.path.split(os.path.split(os.path.abspath(__file__))[0])[0], "xml/quadrepedrobot.xml")));
+        xmlpath = ((os.path.join((os.path.split(os.path.abspath(__file__))[0]), "xml/quadrepedrobot.xml")));
         mujoco_env.MujocoEnv.__init__(self, xmlpath, 5)
         utils.EzPickle.__init__(self)
 
@@ -31,18 +31,18 @@ class QuadrepedEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         # print("qvel : ",qvel_before[0:3]," ",qvel_after[0:3])
         # print("mc : ",mc_after," ",mc_after)
         
-        alive_bonus = 3.0
+        alive_bonus = 1.0
         data = self.sim.data
-        x_vel = (qpos_after[0] - qpos_before[0])/self.dt;
-        y_vel = (qpos_after[1] - qpos_before[1])/self.dt;
-        lin_vel_cost =   (x_vel+y_vel*0)
+        vel_x = (qpos_after[0] - qpos_before[0])/self.dt;
+        vel_y = (qpos_after[1] - qpos_before[1])/self.dt;
+        lin_vel_cost =   (vel_x+vel_y*0)
         quad_ctrl_cost = 0.1 * np.square(data.ctrl).sum()
         quad_impact_cost = .5e-6 * np.square(data.cfrc_ext).sum()
         quad_impact_cost = min(quad_impact_cost, 10)
-        reward = (lin_vel_cost - quad_ctrl_cost - quad_impact_cost) + alive_bonus
+        reward = ((lin_vel_cost - quad_ctrl_cost - quad_impact_cost) + alive_bonus)
         orientation = qpos_after.flat[3:7]; # w x y z
         done = bool((math.fabs(orientation[1])+math.fabs(orientation[2]))>0.5) # rotational angles |x|+|y| 
-        print("Done : ",done," ",reward,lin_vel_cost,quad_ctrl_cost,quad_impact_cost,);
+        # print("Done : ",done," ",reward,lin_vel_cost,quad_ctrl_cost,quad_impact_cost,"vel [",vel_x,",",vel_y,"]");
         # done = False;
         ob = self._get_obs()
         return ob, reward, done, dict(reward_linvel=lin_vel_cost, reward_quadctrl=-quad_ctrl_cost, reward_alive=alive_bonus, reward_impact=-quad_impact_cost)

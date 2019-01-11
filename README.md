@@ -1,4 +1,10 @@
 # Quadruped-robot
+# Run learning 
+```sh
+$   cd learning
+$   ./scripts/script_9_quadreped_DDPG.sh
+```
+
 ### Requirements
 The project has some dependencies:
 - Install gym dependencies(more information [gym repository](https://github.com/openai/gym))  
