@@ -2,8 +2,8 @@
 import gym
 from gym.spaces import Box, Discrete
 import numpy as np
-from ddpg.ddpg import DDPG
-from ddpg.ou_noise import OUNoise
+from ddpg import DDPG
+from ou_noise import OUNoise
 import dill as pickle
 import os
 #specify parameters here:

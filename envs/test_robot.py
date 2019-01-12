@@ -9,7 +9,7 @@ import mujoco_py as mpy #import load_model_from_path, MjSim, MjViewer
 import os
 
    
-model = mpy.mujoco_py.load_model_from_path("xml/quadrepedrobot.xml")
+model = mpy.mujoco_py.load_model_from_path("xml/quadrupedrobot.xml")
 # model = mpy.mujoco_py.load_model_from_path("xml/humanoid.xml")
 sim = mpy.MjSim(model)
 
