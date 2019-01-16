@@ -15,7 +15,6 @@ class source_quadruped_robot( source_gym ):
 
     ### __INIT__
     def __init__( self ):
-
         source_gym.__init__( self , 'quadruped-robot-v0' )
 
     ### INFORMATION
